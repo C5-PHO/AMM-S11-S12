@@ -15,7 +15,10 @@ class _App extends State<MyApp> {
   @override
   Widget build(BuildContext c) => CupertinoApp(
     debugShowCheckedModeBanner: false,
-    theme: const CupertinoThemeData(primaryColor: purple),
+    theme: const CupertinoThemeData(
+      primaryColor: purple,
+      brightness: Brightness.light,
+    ),
     routes: {
       '/': (_) => Login(data),
       '/menu': (_) => Menu(data),
